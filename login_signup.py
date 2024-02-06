@@ -26,10 +26,10 @@ def main():
         pwd=maskpass.askpass(mask="*")
         myCursor.execute(f"select * from users where UNo={N}")
         records=myCursor.fetchall()
-        print(records[0][1])
+        #print(records[0][1])
         if userName in records[0][3:5] and pwd in records[0][3:5]:
             valid=True
-        print(valid)
+        #print(valid)
     if c==2:
         FN=input("Enter your first name:")
         LN=input("Enter your last name:")
